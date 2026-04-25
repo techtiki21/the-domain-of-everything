@@ -16,6 +16,14 @@ nav{
     padding-left: 3%;
     padding-right: 10%;
 }
+.info-cell{
+    display: inline-block;
+    border: 2px dotted black;
+    border-radius: 20%;
+    margin: 5px 10px 10px 20px;
+    padding: 1%;
+
+}
 #nav-head{
     display: flex;
 }
