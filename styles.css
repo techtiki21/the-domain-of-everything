@@ -1,3 +1,15 @@
+:root {
+    --text-outline-rgb: 0, 0, 0;
+}
+
+* {
+    text-shadow:
+        -1px -1px 0 rgba(var(--text-outline-rgb), 0.7),
+        1px -1px 0 rgba(var(--text-outline-rgb), 0.7),
+        -1px 1px 0 rgba(var(--text-outline-rgb), 0.7),
+        1px 1px 0 rgba(var(--text-outline-rgb), 0.7);
+}
+
 html, body {
     height: 100%;
 }
