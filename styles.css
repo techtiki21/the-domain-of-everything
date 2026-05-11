@@ -31,7 +31,7 @@ nav{
 .cell-row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .info-cell{
     display: inline-block;
@@ -39,6 +39,9 @@ nav{
     border-radius: 20%;
     margin: 5px 10px 10px 20px;
     padding: 1%;
+    transition: transform 0.3s ease;
+    align-items:center;
+    justify-content: center;
 }
 #nav-head{
     display: flex;
@@ -58,5 +61,8 @@ footer > ul{
     list-style-type: none;
     padding: 0px 20px 0px 20px;
     gap: 20px;
+}
+.info-cell:hover{
+    transform: scale(1.1);
 }
 
