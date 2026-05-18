@@ -9,15 +9,16 @@ load_dotenv()
 app = Flask(__name__, template_folder="templates")
 WEATHER_KEY = os.getenv('WEATHER_KEY')
 
-# weather data
-city = "London"
-weather_response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={WEATHER_KEY}&units=metric")
-weather_data = weather_response.json()
-temperature = weather_data['main']['temp']
+def fetchWeatherAPI(city):
+    weather_response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={WEATHER_KEY}&units=metric")
+    weather_data = weather_response.json()
+    temperature = weather_data['main']['temp']
+    return [city, temperature]
 
 @app.route('/')
 def index():
-    return render_template("index.html", city=city, temp=temperature)
+    weather = fetchWeatherAPI("London")
+    return render_template("index.html", city=weather[0], temp=weather[1])
 
 if __name__ == '__main__':
     app.run()
