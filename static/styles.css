@@ -53,6 +53,10 @@ nav{
     padding: 0px 20px 0px 20px;
     gap: 20px;
 }
+.info-list{
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 footer > ul{
     display: flex;
     justify-content: center;

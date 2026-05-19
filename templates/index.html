@@ -28,8 +28,11 @@
         <div class="cell-row">
             <div class="info-cell">
                 <h2>Live Weather ({{ city }})</h2>
-                <ul>
-                    <li>Temperature: {{ temp }} C</li>
+                <ul class="info-list">
+                    <li>Temperature: <b>{{ temp }}&deg;C</b></li>
+                    <li>Temp Low/High: <b>{{ lowHigh }}&deg;C</b></li>
+                    <li>Feels Like: <b>{{ feelsLike }}&deg;C</b></li>
+                    <li>Weather: <b>{{ weather }}</b></li>
                 </ul>
             </div>
             <div class="info-cell">
