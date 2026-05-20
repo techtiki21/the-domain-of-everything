@@ -42,6 +42,7 @@ nav{
     transition: transform 0.3s ease;
     align-items:center;
     justify-content: center;
+    text-align: center;
 }
 #nav-head{
     display: flex;
@@ -56,6 +57,7 @@ nav{
 .info-list{
     font-size: large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
 }
 footer > ul{
     display: flex;

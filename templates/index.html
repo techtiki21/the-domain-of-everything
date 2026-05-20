@@ -31,14 +31,19 @@
                 <ul class="info-list">
                     <li>Temperature: <b>{{ temp }}&deg;C</b></li>
                     <li>Temp Low/High: <b>{{ lowHigh }}&deg;C</b></li>
-                    <li>Feels Like: <b>{{ feelsLike }}&deg;C</b></li>
-                    <li>Weather: <b>{{ weather }}</b></li>
+                    <li>Feels Like: <b>{{ feels }}&deg;C</b></li>
+                    <li>Weather: <b>{{ sky }}</b></li>
                 </ul>
             </div>
             <div class="info-cell">
                 <h2>Stock Market (S&P 500)</h2>
-                <ul>
-                    <li>% Growth: </li>
+                <ul class="info-list">
+                    <li>Current Share Price: {{ current }}$</li>
+                    <li>24h Change: {{ day_change }}$</li>
+                    <li>% Growth: {{percentGrowth }}%</li>
+                    <li>High: {{ stockHigh }}$</li>
+                    <li>Low: {{ stockLow }}$</li>
+                    <li>Open: {{ stockOpen }}$</li>
                 </ul>
             </div>
         </div>
